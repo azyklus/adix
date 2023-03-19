@@ -1,5 +1,5 @@
 when not declared(stdin): import std/[syncio, formatfloat]
-import adix/lptabz {.all.}, cligen, cligen/[mslice, osUt], std/times
+import ../adix/lptabz {.all.}, cligen, cligen/[mslice, osUt], std/times
 var str: string                 # Big (NON-RELOCATABLE!) stack of string data
 
 proc lfreq(n=0, count=false,uniq=false,Norm=false, size=7, dSize=99, tm=false)=
