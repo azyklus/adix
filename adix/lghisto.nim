@@ -28,7 +28,7 @@
 ## decaying memory are not possible since FP arithmetic kind of breaks BISTs.
 
 when not declared(addFloat): import std/formatfloat
-import adix/bist, math
+import ./bist, math
 type
   LgHisto*[C] = object  ## Log-spaced histogram with `Bist[C]` backing
     n: int              # number of bins
