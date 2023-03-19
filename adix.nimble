@@ -5,6 +5,7 @@ description = "An Adaptive Index Library for Nim"
 license     = "MIT/ISC"
 
 # Deps
+requires    "fitl"
 requires    "nim >= 1.2.0"
 requires    "cligen >= 1.5.42"
 skipDirs    = @[ "tests" ]
