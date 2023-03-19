@@ -18,7 +18,7 @@ when defined(useCligen): from cligen/strUt import fmtUncertainMerged
 else:
   when not declared(addFloat): import std/formatfloat
   proc fmtUncertainMerged(m, e: float, e0=1..2): string = $m & " +- " & $e
-from adix/lghisto import LgHisto, add, pop, quantile, cdf, init
+from ./lghisto import LgHisto, add, pop, quantile, cdf, init
 
 type
   Option* = enum OrderStats
